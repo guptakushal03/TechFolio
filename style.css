@@ -173,7 +173,7 @@ nav .fa i {
 .vertical-line {
     content: "";
     position: absolute;
-    top: 61%;
+    top: 65%;
     width: 10%;
     height: 0.1%;
     background-color: #03875b;
