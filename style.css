@@ -60,27 +60,23 @@ body {
 
 .navbar a:hover {
     color: #fff;
-    /* Set your hover text color */
 }
 
 .navbar .icons i {
     color: #737373;
-    /* Set your icon color */
     font-size: 20px;
     cursor: pointer;
     padding-right: 10px;
     transition: color 0.3s;
-    /* Add smooth transition to icon color */
 }
 
 .navbar .icons i:hover {
     color: #fff;
-    /* Set your hover icon color */
 }
 
 .about-me {
     text-align: center;
-    flex: 1; /* This makes the section take up the remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,7 +151,7 @@ nav .fa i {
 .left-half {
     margin-left: 10%;
     width: 40%;
-    background-color: #000; /* Set your desired background color */
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,13 +167,13 @@ nav .fa i {
     margin-top: 15px;
     width: 90%;
     height: 100%;
-    border-radius: 8px; /* Optional: Add rounded corners to the image */
+    border-radius: 8px;
 }
 
 .vertical-line {
     content: "";
     position: absolute;
-    top: 77.75%;
+    top: 61%;
     width: 10%;
     height: 0.1%;
     background-color: #03875b;
@@ -230,8 +226,8 @@ nav .fa i {
     margin-top: 1%;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: rgba(115, 115, 115, 0.5); /* Set your desired background color */
-    color: #fff; /* Set your desired text color */
+    background-color: rgba(115, 115, 115, 0.5);
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -239,7 +235,7 @@ nav .fa i {
 
 .contact-me {
     text-align: center;
-    flex: 1; /* This makes the section take up the remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,18 +265,18 @@ nav .fa i {
 .contact-info div i {
     margin-right: 10px;
     font-size: 24px;
-    color: #008000; /* Set your initial icon color */
+    color: #008000;
 }
 
 .contact-info div {
     display: flex;
     align-items: center;
-    color: #666; /* Set your initial text color */
+    color: #666;
 }
 
 
 .contact-info div:hover i {
-    color: #fff; /* Set your icon color on hover */
+    color: #fff;
 }
 
 .info {
@@ -368,7 +364,6 @@ nav .fa i {
     cursor: auto;
 }
 
-/* Example Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
 
     .navbar-items {
@@ -504,7 +499,7 @@ nav .fa i {
     td:before {
         content: attr(data-label);
         font-weight: bold;
-        color: #03875b; /* Set your text color */
+        color: #03875b;
         font-size: 20px;
         margin-right: 5px;
     }
@@ -517,7 +512,7 @@ nav .fa i {
     }
 
     .navbar .icons i {
-        color: #fff; /* Ensure icon color is set for smaller screens */
+        color: #fff;
     }
 
     .about-me p1{
