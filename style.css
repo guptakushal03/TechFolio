@@ -170,16 +170,6 @@ nav .fa i {
     border-radius: 8px;
 }
 
-.vertical-line {
-    content: "";
-    position: absolute;
-    top: 65%;
-    width: 10%;
-    height: 0.1%;
-    background-color: #03875b;
-    z-index:-1;
-}
-
 .vertical-long-line {
     position: absolute;
     content: "";
@@ -191,6 +181,12 @@ nav .fa i {
 
 .projects {
     margin-top: 5%;
+}
+
+.project-genre{
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: #03875b;
 }
 
 .project-link {
@@ -206,6 +202,8 @@ nav .fa i {
 
 .project-title {
     font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: #fff;
 }
 
 .project-description {
@@ -274,7 +272,6 @@ nav .fa i {
     color: #666;
 }
 
-
 .contact-info div:hover i {
     color: #fff;
 }
@@ -289,6 +286,7 @@ nav .fa i {
 .icon {
     padding: 5%;
 }
+
 .contact-form {
     max-width: 600px;
     margin: 50px auto;
@@ -426,7 +424,13 @@ nav .fa i {
     }
 
     .project-showcase {
+        display: flex;
+        align-items: center;
         font-size: 14px;
+    }
+
+    .project-genre{
+        font-size: 22px;
     }
 
     .project-title {
@@ -440,6 +444,13 @@ nav .fa i {
     .project-description {
         font-size: 14px;
         text-align: left;
+    }
+
+    .skill-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10%;
     }
 
     .skill-bubble {
@@ -526,6 +537,10 @@ nav .fa i {
 
     .project-showcase {
         font-size: 14px;
+    }
+
+    .project-genre{
+        font-size: 22px;
     }
 
     .project-title {
