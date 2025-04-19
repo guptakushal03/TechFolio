@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="Images/icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>TechFolio - Projects</title>
+
+</head>
+
+<body>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .card {
+            flex-grow: 1;
+            background: #000;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: 0.3s ease-in-out;
+            flex-direction: column;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 5px solid #fff;
+        }
+
+        .card-content {
+            height: 100%;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .card-content p {
+            text-align: left !important;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html" style="font-size: 30px;"><span class="active">𝐓𝐞𝐜h𝐅𝐨𝐥𝐢𝐨</span></a>
+        <div style="text-align: center;" class="nav_links nav_links_ul" id="navLinks">
+            <i class="fa fa-times cross hidden" onclick="hideMenu()"></i>
+            <a href="index.html">Home</a>
+            <a href="projects.html"><span class="active">Projects</span></a>
+            <a href="Kushal_Gupta_Resume.pdf" target="_blank">Resume</a>
+            <a href="#contact-me" class="handle-contact-navbtn">Contact Me</a>
+        </div>
+        <i class="fa fa-bars cross2" onclick="showMenu()"></i>
+        <div class="icons nav_links">
+            <a href="#contact-me" class="transparent-button" style="text-decoration: none;">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="home-main">
+        <p style="font-size: 38px;" class="project-showcase"><b>PROJECT SHOWCASE</b></p>
+
+        <div class="project-genre">Web & Software Development</div>
+
+        <div class="container">
+
+            <div class="card" data-url="">
+                <img src="download.jpeg" alt="Crowdsourced Translation Platform">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Crowdsourced Translation Platform</div>
+                    <p class="project-description">
+                        A translation platform that provides instant AI-generated translations, with an option for users to review and improve translations for better accuracy.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 1.5%;">
+                        <a href="" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/PlacementCell#placement-cell">
+                <img src="download.jpeg" alt="Placement Cell WebApp">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Placement Cell WebApp</div>
+                    <p class="project-description">
+                        A platform where students, faculty, and recruiters can securely log in with different roles and participate in discussions about placements and careers.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/PlacementCell/" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Blogger-App#blogging-webapp">
+                <img src="download.jpeg" alt="Blogger WebApp">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Blogger WebApp</div>
+                    <p class="project-description">
+                        A blogging platform where users can create, edit, and delete blogs, like and comment on posts, get AI-generated summaries, and receive personalized recommendations.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/Blogger-App/" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Dream-Journal#dream-journal">
+                <img src="download.jpeg" alt="Dream Journal">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Dream Journal</div>
+                    <p class="project-description">
+                        A dream journaling platform where users can create, edit, and delete dream entries, analyze their emotional tone with sentiment analysis, view AI-generated summaries, and receive personalized insights and trends based on past entries.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://dream-journal-fc0dd.web.app/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/To-Do-List/#to-do-list">
+                <img src="download.jpeg" alt="Firebase To-Do List Web App">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Firebase To-Do List App</div>
+                    <p class="project-description">
+                        A To-Do List app that uses Firebase Realtime Database for storing, syncing, and managing tasks with real-time updates and easy task management.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://todolist-921ab.web.app/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/TechFolio#techfolio">
+                <img src="download.jpeg" alt="TechFolio website">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">TechFolio</div>
+                    <p class="project-description">
+                        A personal portfolio website highlighting Kushal Gupta's skills, projects, and achievements, with interactive sections for showcasing work and connecting with visitors.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://guptakushal03.github.io/TechFolio/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/ProjectFolio#projectfolio">
+                <img src="download.jpeg" alt="ProjectFolio website">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">ProjectFolio</div>
+                    <p class="project-description">
+                        A personal projectfolio website showcasing Kushal Gupta’s open-source projects, social media links, and other portfolios in one place.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://guptakushal03.github.io/ProjectFolio/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">AI & Data Science Applications</div>
+
+        <div class="container">
+
+            <div class="card" data-url="">
+                <img src="download.jpeg" alt="AI-Powered Desktop Assistant">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">AI-Powered Desktop Assistant</div>
+                    <p class="project-description">
+                        A voice-controlled assistant that performs tasks, analyzes screens, plays music, and provides real-time information using a custom API.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Book-Recommender-System#book-recommender-system">
+                <img src="download.jpeg" alt="Book Recommender System">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Book Recommender System</div>
+                    <p class="project-description">
+                        A book recommendation system that helps users discover books based on similarity scores, featuring an interactive interface for easy exploration.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://book-recommender-system-by-kg.streamlit.app/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Whatsapp-Chat-Analyser#whatsapp-chat-analyzer">
+                <img src="download.jpeg" alt="WhatsApp Chat Analyser">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">WhatsApp Chat Analyser</div>
+                    <p class="project-description">
+                        A WhatsApp Chat Analyzer that visualizes chat data, showing message patterns, media sharing, links, activity trends, and word clouds.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://whatsapp-chat-analyser-by-kg.streamlit.app/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Virtual-Voice-Assistant/#virtual-voice-assistant">
+                <img src="download.jpeg" alt="Virtual Voice Assistant">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Virtual Voice Assistant</div>
+                    <p class="project-description">
+                        A voice-controlled desktop assistant with AI chat integration, allowing users to browse the web, launch apps, and have GPT-3.5-powered conversations using speech commands.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/Virtual-Voice-Assistant/" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/SignLangSync#signlangsunc---webcam-image-classification-for-sign-language-recognition">
+                <img src="download.jpeg" alt="SignLangSync">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">SignLangSync</div>
+                    <p class="project-description">
+                        A real-time sign language recognition web app that uses a webcam to detect and classify hand gestures, allowing users to train custom signs and receive speech feedback.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://guptakushal03.github.io/SignLangSync/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">Desktop Applications</div>
+
+        <div class="container">
+
+            <div class="card" data-url="https://github.com/guptakushal03/Image-Processing-WindowsApp#image-processing-windows-application">
+                <img src="download.jpeg" alt="Image Processing WindowsApp">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Image Processing WindowsApp</div>
+                    <p class="project-description">
+                        A Windows desktop application for image processing with features like grayscale conversion, binarization, contour detection, face/eye recognition, QR code processing, and OCR.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/Image-Processing-WindowsApp/" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">Application Programming Interface - API</div>
+
+        <div class="container">
+
+            <div class="card" data-url="https://github.com/guptakushal03/FluxAPI#fluxapi">
+                <img src="download.jpeg" alt="FluxAPI">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">FluxAPI</div>
+                    <p class="project-description">
+                        A unified API that delivers jokes, quotes, weather, news, to-do management, and date-time info through dedicated endpoints, built for seamless integration into personal assistant and productivity tools.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://fluxapi-fssj.onrender.com/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">Browser Extension</div>
+
+        <div class="container">
+
+            <div class="card" data-url="https://github.com/guptakushal03/Ghost-in-the-Tab#ghost-in-the-tab">
+                <img src="download.jpeg" alt="Ghost in the Tab">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Ghost in the Tab</div>
+                    <p class="project-description">
+                        A browser-based assistant that lives in a tab, capable of executing voice commands, summarizing content, scanning on-screen data, and performing contextual tasks—bringing intelligent interaction directly into your browser workspace.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/Ghost-in-the-Tab" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">System Tray</div>
+
+        <div class="container">
+
+            <div class="card" data-url="https://github.com/guptakushal03/Virtual-Roommate#virtual-roommate">
+                <img src="download.jpeg" alt="Virtual Roommate">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Virtual Roommate</div>
+                    <p class="project-description">
+                        A lightweight desktop assistant that lives in the system tray, allowing users to set, manage, and receive voice-activated reminders—offering a simple, always-available solution for staying on track.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/Virtual-Roommate" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Phases-Of-Moon#phases-of-moon">
+                <img src="download.jpeg" alt="Phases Of Moon">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Phases Of Moon</div>
+                    <p class="project-description">
+                        An interactive app that visualizes the current moon phase based on date and location, with smooth animations and lunar cycle tracking to help users stay connected with celestial rhythms.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/Phases-Of-Moon" target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">Multimedia & Creative Projects</div>
+
+        <div class="container">
+
+            <div class="card" data-url="https://github.com/guptakushal03/The-Weather-App#weather-app-website">
+                <img src="download.jpeg" alt="The Weather WebApp">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">The Weather WebApp</div>
+                    <p class="project-description">
+                        A Weather App website that displays real-time weather data and a 5-day forecast, allowing users to search for locations or get automatic updates based on their current location.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://guptakushal03.github.io/The-Weather-App/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Parametric-Butterfly#parametric-butterfly-visualization">
+                <img src="download.jpeg" alt="Parametric Butterfly">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Parametric Butterfly</div>
+                    <p class="project-description">
+                        A visual exploration tool where users can generate, manipulate, and animate parametric butterfly curves using interactive sliders and canvas rendering, with support for real-time visualization and dynamic customization.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://guptakushal03.github.io/Parametric-Butterfly/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/Music-Visualizer#online-music-visualizer">
+                <img src="download.jpeg" alt="Online Music Visualizer">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">Online Music Visualizer</div>
+                    <p class="project-description">
+                        An interactive music visualizer using JavaScript, Web Audio API, and Canvas API, featuring real-time animations, floating particles, and user-controlled playback for an immersive experience.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://guptakushal03.github.io/Music-Visualizer/" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-genre">Internship Tasks</div>
+
+        <div class="container">
+
+            <div class="card" data-url="https://github.com/guptakushal03/CodSoft-DataScience-Internship-Tasks#codsoft-internship-machine-learning-projects">
+                <img src="download.jpeg" alt="CodSoft DataScience Internship Tasks">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">CodSoft DataScience Internship Tasks</div>
+                    <p class="project-description">
+                        Completed four machine learning projects during the Codsoft Internship, including Titanic
+                        Survival Prediction, Movie Rating Prediction, Iris Flower Classification, and Sales Prediction
+                        using various ML models.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/CodSoft-DataScience-Internship-Tasks/"
+                            target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-url="https://github.com/guptakushal03/BrainyBeam-Django-Internship-Tasks#brainybeam-django-internship-tasks">
+                <img src="download.jpeg" alt="BrainyBeam Django Internship Tasks">
+                <div style="padding: 0 15px;" class="card-content">
+                    <div class="project-title">BrainyBeam Django Internship Tasks</div>
+                    <p class="project-description">
+                        Completed multiple Django and Python tasks during the BrainyBeam Internship, including a Quiz
+                        App, Time Complexity Analyzer, REST API development, API integration, and OOP concepts, though
+                        the internship application was ultimately rejected.
+                    </p>
+                    <div class="project-link" style="padding-bottom: 5%;">
+                        <a href="https://github.com/guptakushal03/BrainyBeam-Django-Internship-Tasks"
+                            target="_blank">View Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="follow-along">
+        <p1>
+            Follow Along:
+        </p1>
+        <div class="social_links">
+            <a href="https://www.facebook.com/kushal.gupta.39794895"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/kushal_gupta_03"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/kushalgupta03/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
