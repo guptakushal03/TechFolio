@@ -136,7 +136,7 @@ nav .fa i {
     z-index:-1;
 }
 
-.transparent-button {
+.transparent-button, final-submit {
     background-color: #000;
     color: white !important;
     padding: 10px 22px;
@@ -160,7 +160,7 @@ nav .fa i {
     transition: background-color 0.5s, color 0.3s !important;
 }
 
-.transparent-button:hover {
+.transparent-button:hover, final-submit:hover {
     background-color: white;
     color: black !important;
 }
@@ -369,6 +369,7 @@ nav .fa i {
 
 .form-group input,
 .form-group textarea {
+    font-family: inherit;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -383,6 +384,31 @@ nav .fa i {
     background-color: #008000;
     color: #fff;
     cursor: pointer;
+}
+
+.form-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.form-message.success {
+    background: #e6fffa;
+    color: #065f46;
+    border: 1px solid #34d399;
+}
+
+.form-message.error {
+    background: #fee2e2;
+    color: #7f1d1d;
+    border: 1px solid #f87171;
 }
 
 .final-submit {
