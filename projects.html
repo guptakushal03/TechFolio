@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="Images/icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>TechFolio — Projects</title>
+</head>
+<body>
+
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <div class="loader-logo">TechFolio</div>
+            <div class="loader-bar-track">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Tech<span class="accent-dot">F</span>olio</a>
+        <div class="nav_links nav_links_ul" id="navLinks">
+            <i class="fa fa-times cross" onclick="hideMenu()" aria-label="Close menu"></i>
+            <a href="index.html">Home</a>
+            <a href="projects.html"><span class="active">Projects</span></a>
+            <a href="manifesto.html">Manifesto</a>
+            <a href="Kushal_Gupta_Resume.pdf" target="_blank">Résumé</a>
+            <a href="index.html#contact-me" class="handle-contact-navbtn">Contact</a>
+        </div>
+        <i class="fa fa-bars cross2" onclick="showMenu()" aria-label="Open menu"></i>
+        <div class="icons nav_links">
+            <a href="index.html#contact-me" class="nav-cta">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="home-main">
+        <div class="section-label" style="padding-top: 60px;">Portfolio</div>
+        <h1 class="project-showcase">Project<br>Showcase</h1>
+
+        <!-- Web & Software -->
+        <div class="project-genre">Web &amp; Software Development</div>
+        <div class="container">
+            <div class="card" data-url="">
+                <div class="card-img-wrap"><img src="Images/CrowdSourced Translation Platform.png" alt="Crowdsourced Translation Platform" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Crowdsourced Translation Platform</div>
+                    <p class="project-description">Instant AI-generated translations with community review for improved accuracy.</p>
+                    <div class="project-link"><a href="" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/UI-Generator#readme">
+                <div class="card-img-wrap"><img src="Images/UI Generator.png" alt="UI Generator" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">UI Generator</div>
+                    <p class="project-description">Whiteboard-style UI builder with real-time HTML/CSS generation and live preview.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/UI-Generator/" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/PlacementCell#readme">
+                <div class="card-img-wrap"><img src="Images/Placement Cell 2.png" alt="Placement Cell WebApp" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Placement Cell WebApp</div>
+                    <p class="project-description">Role-based platform for students, faculty, and recruiters to discuss placements and careers.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/PlacementCell/" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Dream-Journal#readme">
+                <div class="card-img-wrap"><img src="Images/Dream Journalling 2.png" alt="Dream Journal" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Dream Journal</div>
+                    <p class="project-description">Journal platform with sentiment analysis, AI summaries, and personalized trend insights.</p>
+                    <div class="project-link"><a href="https://dream-journal-fc0dd.web.app/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Blogger-App#readme">
+                <div class="card-img-wrap"><img src="Images/Blogging WebApp 2.png" alt="Blogger WebApp" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Blogger WebApp</div>
+                    <p class="project-description">Blogging platform with AI-generated summaries and personalized post recommendations.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Blogger-App/" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/To-Do-List#readme">
+                <div class="card-img-wrap"><img src="Images/ToDo.png" alt="Firebase To-Do List" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Firebase To-Do App</div>
+                    <p class="project-description">Real-time task management using Firebase Realtime Database for syncing and storage.</p>
+                    <div class="project-link"><a href="https://todolist-921ab.web.app/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/TechFolio#readme">
+                <div class="card-img-wrap"><img src="Images/Tech Folio.png" alt="TechFolio" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">TechFolio</div>
+                    <p class="project-description">Personal portfolio highlighting skills, projects, and achievements with interactive sections.</p>
+                    <div class="project-link"><a href="https://guptakushal03.github.io/TechFolio/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/ProjectFolio#readme">
+                <div class="card-img-wrap"><img src="Images/Project Folio.png" alt="ProjectFolio" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">ProjectFolio</div>
+                    <p class="project-description">Centralized hub for open-source projects, social links, and portfolio collections.</p>
+                    <div class="project-link"><a href="https://guptakushal03.github.io/ProjectFolio/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & Data Science -->
+        <div class="project-genre">AI &amp; Data Science</div>
+        <div class="container">
+            <div class="card" data-url="">
+                <div class="card-img-wrap"><img src="Images/System Interaction using AI.png" alt="AI-Powered Desktop Assistant" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">AI-Powered Desktop Assistant</div>
+                    <p class="project-description">Voice-controlled assistant for tasks, screen analysis, music playback, and real-time info.</p>
+                    <div class="project-link"><a href="" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/SignLangSync#readme">
+                <div class="card-img-wrap"><img src="Images/SignLangSync.png" alt="SignLangSync" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">SignLangSync</div>
+                    <p class="project-description">Real-time sign language recognition using a webcam — train custom signs with speech feedback.</p>
+                    <div class="project-link"><a href="https://guptakushal03.github.io/SignLangSync/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Book-Recommender-System#readme">
+                <div class="card-img-wrap"><img src="Images/Book Recommendation.png" alt="Book Recommender System" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Book Recommender System</div>
+                    <p class="project-description">Similarity-based book discovery with an interactive exploration interface.</p>
+                    <div class="project-link"><a href="https://book-recommender-system-by-kg.streamlit.app/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Whatsapp-Chat-Analyser#readme">
+                <div class="card-img-wrap"><img src="Images/WhatsApp Chat Analyzer.png" alt="WhatsApp Chat Analyser" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">WhatsApp Chat Analyser</div>
+                    <p class="project-description">Chat data visualizer showing message patterns, media, activity trends, and word clouds.</p>
+                    <div class="project-link"><a href="https://whatsapp-chat-analyser-by-kg.streamlit.app/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Virtual-Voice-Assistant#readme">
+                <div class="card-img-wrap"><img src="Images/Virtual Vocie Assistant.png" alt="Virtual Voice Assistant" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Virtual Voice Assistant</div>
+                    <p class="project-description">Desktop assistant with GPT-3.5 chat, web browsing, and app launching via speech commands.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Virtual-Voice-Assistant/" target="_blank">View Source</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Apps -->
+        <div class="project-genre">Desktop Applications</div>
+        <div class="container">
+            <div class="card" data-url="https://github.com/guptakushal03/Image-Processing-WindowsApp#readme">
+                <div class="card-img-wrap"><img src="Images/Image Processing.png" alt="Image Processing WindowsApp" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Image Processing WindowsApp</div>
+                    <p class="project-description">Windows app for grayscale, binarization, contour detection, face/eye recognition, QR, and OCR.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Image-Processing-WindowsApp/" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Image-Stitcher#readme">
+                <div class="card-img-wrap"><img src="Images/Image Stitcher.png" alt="Image Stitcher" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Image Stitcher</div>
+                    <p class="project-description">Python tool to stitch overlapping images into panoramic views using OpenCV — CLI and GUI.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Image-Stitcher/" target="_blank">View Source</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- APIs -->
+        <div class="project-genre">APIs</div>
+        <div class="container">
+            <div class="card" data-url="https://github.com/guptakushal03/FluxAPI#readme">
+                <div class="card-img-wrap"><img src="Images/FluxAPI.png" alt="FluxAPI" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">FluxAPI</div>
+                    <p class="project-description">Unified API delivering jokes, quotes, weather, news, to-do management, and date-time data.</p>
+                    <div class="project-link"><a href="https://fluxapi-fssj.onrender.com/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Telegram Bots -->
+        <div class="project-genre">Telegram Bots</div>
+        <div class="container">
+            <div class="card" data-url="https://github.com/guptakushal03/Telegram-Utility-Bot#readme">
+                <div class="card-img-wrap"><img src="Images/Telegram Utility Bot.png" alt="Telegram Utility Bot" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Telegram Utility Bot</div>
+                    <p class="project-description">Multi-functional bot with jokes, quotes, notes, PDF summarization, and productivity features.</p>
+                    <div class="project-link"><a href="https://t.me/PalAssistBot" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Browser Extension -->
+        <div class="project-genre">Browser Extensions</div>
+        <div class="container">
+            <div class="card" data-url="https://github.com/guptakushal03/Ghost-in-the-Tab#readme">
+                <div class="card-img-wrap"><img src="Images/Ghost In The Tab.png" alt="Ghost in the Tab" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Ghost in the Tab</div>
+                    <p class="project-description">Playful browser experiment with subtle glitches, ghostly cursors, and eerie audio disturbances.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Ghost-in-the-Tab" target="_blank">View Source</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Tray -->
+        <div class="project-genre">System Tray</div>
+        <div class="container">
+            <div class="card" data-url="https://github.com/guptakushal03/Virtual-Roommate#readme">
+                <div class="card-img-wrap"><img src="Images/Virtual Roommate.png" alt="Virtual Roommate" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Virtual Roommate</div>
+                    <p class="project-description">Lightweight tray assistant for voice-activated reminders — always available, always on track.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Virtual-Roommate" target="_blank">View Source</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Phases-Of-Moon#readme">
+                <div class="card-img-wrap"><img src="Images/Phases Of Moon.png" alt="Phases Of Moon" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Phases Of Moon</div>
+                    <p class="project-description">Animated moon phase visualizer based on date and location with lunar cycle tracking.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/Phases-Of-Moon" target="_blank">View Source</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Creative -->
+        <div class="project-genre">Multimedia &amp; Creative</div>
+        <div class="container">
+            <div class="card" data-url="https://github.com/guptakushal03/The-Weather-App#readme">
+                <div class="card-img-wrap"><img src="Images/Weather Website.png" alt="Weather App" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">The Weather App</div>
+                    <p class="project-description">Real-time weather and 5-day forecast with location search or auto-detection.</p>
+                    <div class="project-link"><a href="https://guptakushal03.github.io/The-Weather-App/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Parametric-Butterfly#readme">
+                <div class="card-img-wrap"><img src="Images/Parametric Butterfly.png" alt="Parametric Butterfly" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Parametric Butterfly</div>
+                    <p class="project-description">Interactive canvas for generating and animating parametric butterfly curves with live sliders.</p>
+                    <div class="project-link"><a href="https://guptakushal03.github.io/Parametric-Butterfly/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/Online-Music-Visualizer#readme">
+                <div class="card-img-wrap"><img src="Images/Music Visualizer.png" alt="Music Visualizer" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">Online Music Visualizer</div>
+                    <p class="project-description">Web Audio API visualizer with real-time animations, floating particles, and playback control.</p>
+                    <div class="project-link"><a href="https://guptakushal03.github.io/Online-Music-Visualizer/" target="_blank">Live Project</a></div>
+                </div>
+            </div>
+            <div class="card" data-url="https://github.com/guptakushal03/SQL-Murder-Mystery#readme">
+                <div class="card-img-wrap"><img src="Images/SQLMurder.png" alt="SQL Murder Mystery" loading="lazy"></div>
+                <div class="card-body">
+                    <div class="project-title">SQL Murder Mystery Solution</div>
+                    <p class="project-description">Fictional SQL detective game — queried crime reports, interviews, and gym records to solve the case.</p>
+                    <div class="project-link"><a href="https://github.com/guptakushal03/SQL-Murder-Mystery" target="_blank">View Solution</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="follow-along">
+            <span class="follow-label">Follow Along</span>
+            <div class="social_links">
+                <a href="https://www.linkedin.com/in/kushalgupta03/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/kushal_gupta_03" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/kushal.gupta.39794895" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">© 2025 Kushal Gupta. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>

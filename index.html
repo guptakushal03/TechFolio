@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="Images/icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>TechFolio — Kushal Gupta</title>
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <div class="loader-logo">TechFolio</div>
+            <div class="loader-bar-track">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Tech<span class="accent-dot">F</span>olio</a>
+
+        <div class="nav_links nav_links_ul" id="navLinks">
+            <i class="fa fa-times cross" onclick="hideMenu()" aria-label="Close menu"></i>
+            <a href="index.html"><span class="active">Home</span></a>
+            <a href="projects.html">Projects</a>
+            <a href="manifesto.html">Manifesto</a>
+            <a href="Kushal_Gupta_Resume.pdf" target="_blank">Résumé</a>
+            <a href="#contact-me" class="handle-contact-navbtn">Contact</a>
+        </div>
+
+        <i class="fa fa-bars cross2" onclick="showMenu()" aria-label="Open menu"></i>
+
+        <div class="icons nav_links">
+            <a href="#contact-me" class="nav-cta">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="about-me">
+        <span class="hero-eyebrow">Available for opportunities</span>
+        <span class="hero-name">
+            Kushal<br>
+            <span class="name-accent">Gupta</span>
+        </span>
+        <p>Aspiring Software Engineer — passionate about AI, full-stack development, and building intelligent systems. Based in India.</p>
+        <span class="hero-scroll-hint">Scroll</span>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <div class="work-heading-wrap">
+        <div class="section-label">Selected Work</div>
+        <h2 class="work-heading">
+            What I've<br>
+            <span class="dim-text">been building</span>
+        </h2>
+    </div>
+
+    <div class="container">
+        <div class="card" data-url="">
+            <div class="card-img-wrap">
+                <img src="Images/System Interaction using AI.png" alt="AI-Powered Desktop Assistant" loading="lazy">
+            </div>
+            <div class="card-body">
+                <div class="project-title">AI-Powered Desktop Assistant</div>
+                <p class="project-description">A voice-controlled assistant that performs tasks, analyzes screens, plays music, and provides real-time information using a custom API.</p>
+                <div class="project-link"><a href="" target="_blank">View Source</a></div>
+            </div>
+        </div>
+
+        <div class="card" data-url="">
+            <div class="card-img-wrap">
+                <img src="Images/CrowdSourced Translation Platform.png" alt="Crowdsourced Translation Platform" loading="lazy">
+            </div>
+            <div class="card-body">
+                <div class="project-title">Crowdsourced Translation Platform</div>
+                <p class="project-description">A translation platform with instant AI-generated translations and community review for improved accuracy.</p>
+                <div class="project-link"><a href="" target="_blank">View Source</a></div>
+            </div>
+        </div>
+
+        <div class="card" data-url="https://github.com/guptakushal03/UI-Generator#readme">
+            <div class="card-img-wrap">
+                <img src="Images/UI Generator.png" alt="UI Generator" loading="lazy">
+            </div>
+            <div class="card-body">
+                <div class="project-title">UI Generator</div>
+                <p class="project-description">A whiteboard-style UI builder with real-time HTML/CSS code generation, live preview, editable code, and downloadable designs.</p>
+                <div class="project-link"><a href="https://github.com/guptakushal03/UI-Generator/" target="_blank">View Source</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="show-more-wrap">
+        <a href="projects.html" class="btn-outline">See All Projects</a>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-main">
+        <div class="left-half">
+            <img src="Images/profile_pic.jpg" alt="Kushal Gupta">
+        </div>
+        <div class="right-half">
+            <div class="section-label">About Me</div>
+            <h2 class="about-heading">Who<br>am I?</h2>
+            <p class="about-body">I'm a software developer passionate about AI, full-stack development, and building smart, scalable applications. Always up for a challenge — I love turning ideas into functional, efficient systems.</p>
+            <p class="about-body">From AI-powered assistants and web apps to data science and image processing, I've worked on a range of projects that push the boundaries of what's possible.</p>
+            <p class="about-body">While you're here, say hi — especially if you're into AI, open-source, or cutting-edge tech.</p>
+            <a href="#contact-me" class="about-cta">Get in touch</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact-me">
+        <div class="section-label" style="justify-content: center;">Contact</div>
+        <h2 class="contact-heading">Let's<br><span class="dim">work together</span></h2>
+        <p class="contact-sub">Have a project idea, collaboration in mind, or just want to chat? I'd love to hear from you.</p>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Name" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email" autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="form-submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="follow-along">
+            <span class="follow-label">Follow Along</span>
+            <div class="social_links">
+                <a href="https://www.linkedin.com/in/kushalgupta03/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/kushal_gupta_03" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/kushal.gupta.39794895" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">© 2025 Kushal Gupta. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
