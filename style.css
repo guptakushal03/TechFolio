@@ -719,7 +719,7 @@ body::before {
 @media (max-width: 900px) {
     .container { grid-template-columns: repeat(2, 1fr); }
     .about-main { grid-template-columns: 1fr; }
-    .left-half { aspect-ratio: 16/9; }
+    .left-half { aspect-ratio: 4/5; }
 }
 
 /* ════════════════════════════════
@@ -821,7 +821,7 @@ body::before {
         grid-template-columns: 1fr;
         margin-top: 60px;
     }
-    .left-half { aspect-ratio: 4/3; }
+    .left-half { aspect-ratio: 4/5; }
 
     /* Hide scroll hint */
     .hero-scroll-hint { display: none; }
